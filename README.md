@@ -17,3 +17,4 @@
         }).get().getSalary();
 
     }
+5 多属性排序 List<Teacher> ret = teachers.stream().sorted(Comparator.comparing(Teacher::getAge).reversed().thenComparing(Teacher::getSalary).reversed()).collect(Collectors.toList());
